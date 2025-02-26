@@ -5,71 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ноготочки</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body>
+<body class="body">
     <header class="header">
+        <div class="header__content">
         <img src="images/logo.png" alt="логотип" width="300" height="300">
-        <h1>Nail Studio</h1>
-        <nav>
-            <ul>
-                <button class="button_header"><a href="#"></a>Главная</button>
-                <button class="button_header"><a href="#"></a>Меню</button>
-                <button class="button_header"><a href="#"></a>Курсы</button>
-            </ul>
+        <h1 class="h1">Nail Studio</h1>
+        <nav class="header__nav">
+                <button class="button_header"><a href="#">Главная</a></button>
+                <button class="button_header"><a href="#">Меню</a></button>
+                <button class="button_header"><a href="#">Курсы</a></button>
+                <button class="button_header"><a href="#">Регистрация</a></button>
+                <button class="button_header"><a href="#">Поддержка</a></button>
         </nav>
+        </div>
     </header>
+
     <main class="main">
         <aside>Акции и скидки</aside>
         <aside>Отзывы</aside>
         <section>
             <div class="main1">
-
-                <h2 class="exempl">Работы учеников</h2>
+<section class="students__works">
+    <div class="block__exempl">
+        <h2 class="h2">Работы учеников</h2>
+    </div>
+</section>
 
             </div>
             <div class="exempl1">
-                <li> <img src="images/пример 1.jpg" alt="Пример" width="300" height="300">
+                <li class="li"> 
+                    <img src="images/пример 1.jpg" alt="Пример" width="300" height="300">
                 </li>
-                <li>
+                <li class="li">
                     <img src="images/пример 2.jpg" alt="пример" width="300" height="300">
                 </li>
-                <li>
+                <li class="li">
                     <img src="images/пример3.jpg" alt="Пример" width="300" height="300">
                 </li>
-                <li>
+                <li class="li">
                     <img src="images/стрелка.avif" alt="cnhtkrf" width="100" height="100">
                 </li>
             </div>
         </section>
-        <section>
-            <div>
-
-                <h2>Преподаватели</h2>
-
+        <section class="teachers">
+            <div class="block__teachers">
+                <h2 class="h2">Преподаватели</h2>
             </div>
             <div class="main3">
                 <ul>
-                    <li>
-                        <img src="images/teacher.jpg" alt="Преподававтель" width="300" height="300">
+                    <li class="li_teachers">
+                        <img src="images/teacher.jpg" alt="teacher" width="300" height="300">
                     </li>
-                    <li>
-                        <img src="images/teacher 2.jpg" alt="Преподававтель" width="300" height="300">
+                    <li  class="li_teachers">
+                        <img src="images/teacher__2.jpg" alt="Преподававтель" width="300" height="300">
                     </li>
-                    <li>
-                        <img src="images/teacher 3.jpg" alt="Преподававтель" width="300" height="300">
+                    <li class="li_teachers">
+                        <img src="images/teacher__3.jpg" alt="Преподававтель" width="300" height="300">
                     </li>
-                    <img src="images/стрелка.avif" alt="cnhtkrf" width="100" height="100">
+                    <img class="arrow" src="images/стрелка.jpg" alt="стрелка" width="100" height="100">
                 </ul>
             </div>
-
         </section>
-        <section>
-            <h2 class="kurs">Курсы</h2>
-            <h2 class="b_kurs"> Базовый курс
-                <h3 class="sum">7500</h3>
-            </h2>
-            <p class="soderzanie">
+
+        <section class="course">
+            <h2 class="h2">Курсы</h2>
+            <h2 class="h2"> Базовый курс</h2>
+            <h3 class="h3">7500</h3>
+            <p class="p">
                 Что входит в курс: <br>
                 1. Теория маникюра; <br>
                 2. Инструменты и материалы; <br>
@@ -78,24 +84,19 @@
                 5. Практика; <br>
                 6. Безопасность и этика. <br>
             </p>
-
         </section>
+
         <section>
-            <div class="reg">
-                <h2>Страница для записи</h2>
-                <h2>Регестрация и запись</h2>
-                <button><a href="#"></a>Базовый курс</button>
-                <button><a href="#"></a>Курс повышения квалификации</button>
-                <button><a href="#"></a>Дополнительные курсы</button>
+            <div class="actions">
+                <h2 class="h2">Страница для записи</h2>
+                <button class="main__buttons"><a href="#"></a>Базовый курс</button>
+                <button class="main__buttons"><a href="#"></a>Курс повышения квалификации</button>
+                <button class="main__buttons"><a href="#"></a>Дополнительные курсы</button>
             </div>
-            <button><a href="#"></a>Поддержка</button>
-
         </section>
-
-        Главная страница
     </main>
     <footer class="footer">
-        здес подвал
+        
     </footer>
 </body>
 
