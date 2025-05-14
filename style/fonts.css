@@ -1,0 +1,27 @@
+/* Regular */
+@font-face {
+    font-family: 'FuturisCTT';
+    src: url('../fonts/FuturisCTT_Regular.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'FuturisCTT';
+    src: url('../fonts/FuturisCTT_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Normal */
+@font-face {
+    font-family: 'FuturisCTT';
+    src: url('../fonts/FuturisCTT_Normal.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

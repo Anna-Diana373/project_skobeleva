@@ -1,18 +1,19 @@
 .header {
-    background-color: rgba(137, 43, 226, 0.562);
+    background-color: rgb(174, 131, 255);
     backdrop-filter: blur(5px);
-    padding: 20px;
+    padding: 2px;
     position: sticky;
     top: 0;
     z-index: 100;
+    border-radius: 15px;
 }
 
 .header__content {
+    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200;
     margin: 0 auto;
 }
 
@@ -25,20 +26,20 @@
 }
 
 .header__nav a {
-font-family: 'Courier New', Courier, monospace;
-font-size: 1em;
-margin: 0 10px;
-text-decoration: none;
-color: burlywood;
-font-weight: bold;
+    font-family: 'FuturisCTT', Courier, monospace;
+    font-size: 1em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: burlywood;
+    font-weight: bold;
 }
 
 .header_nav a:hover {
-color: #2bff00;
+    color:rgb(15, 63, 6);
 }
 
 @media (max-width: 768px) {
-    .header__content{
+    .header__content {
         flex-direction: column;
         align-items: center;
     }

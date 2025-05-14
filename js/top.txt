@@ -1,0 +1,31 @@
+function initSlider(containerSelector) {
+        const container = document.querySelector(#${containerSelector});
+        const imagesContainer = container.querySelector(.${containerSelector === 'works' ? 'work-container' : 'teacher-container'});
+        const images = imagesContainer.querySelectorAll(containerSelector === 'works' ? '.imgexempl' : '.imgteacher');
+        const leftArrow = container.querySelector('.arrow.left');
+        const rightArrow = container.querySelector('.arrow.right');
+        let currentIndex = 0;
+        const imageWidth = images[0].offsetWidth + parseInt(window.getComputedStyle(images[0]).marginRight) *2; // Ширина изображения + отступ
+
+        function updateSlider() {
+            imagesContainer.style.transform = translateX(${-currentIndex * imageWidth}px);
+        }
+
+        function goToPrev() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateSlider();
+        }
+
+        function goToNext() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSlider();
+        }
+
+        leftArrow.addEventListener('click', goToPrev);
+        rightArrow.addEventListener('click', goToNext);
+    }
+
+    // Инициализация слайдеров
+    initSlider('works');
+    initSlider('teachers');
+});

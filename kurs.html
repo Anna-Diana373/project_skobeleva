@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата курса</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f9f9f9;
+        }
+        .payment-form {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .payment-form h2 {
+            margin-bottom: 20px;
+        }
+        .payment-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        .payment-form input, .payment-form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+        .payment-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-form">
+    <h2>Оплата курса</h2>
+    <form id="paymentForm" action="https://vk.me/moneysend/to/1ZZq4" method="POST">
+        <label for="course">Выберите курс:</label>
+        <select name="course" id="course" required>
+            <option value="">-- Выберите курс --</option>
+            <option value="frontend">Базовый курс</option>
+            <option value="backend">Продвинутый курс</option>
+            <option value="design">Курс повышения квалификации</option>
+        </select>
+
+        <label for="amount">Сумма (₽):</label>
+        <input type="number" name="amount" id="amount" required min="1" placeholder="Введите сумму">
+
+        <label for="date">Выберите день:</label>
+        <input type="date" name="date" id="date" required>
+
+        <label for="time">Выберите время:</label>
+        <input type="time" name="time" id="time" required>
+
+        <button type="submit">Перейти к оплате</button>
+    </form>
+</div>
+
+</body>
+</html>

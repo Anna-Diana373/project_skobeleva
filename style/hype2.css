@@ -1,0 +1,33 @@
+/* Контейнер для курсов */
+.courses-container {
+    display: flex; /* Включаем Flexbox */
+    flex-direction: row; /* Размещаем элементы в строку */
+    justify-content: space-around; /*  Равномерно распределяем элементы по горизонтали с отступами по краям */
+    align-items: stretch; /* Растягиваем элементы по высоте, чтобы они были одинаковой высоты */
+    padding: 20px;
+}
+
+/* Секция курса */
+.course {
+    width: 45%; /* Устанавливаем ширину каждой секции (можно изменить) */
+    border: 1px solid #ccc; /* Добавляем границу для наглядности */
+    padding: 15px;
+    box-sizing: border-box; /* Включаем box-sizing, чтобы padding не влиял на общую ширину */
+    text-align: left; /*  Выравнивание текста по левому краю */
+}
+
+/* Дополнительные стили (необязательно) */
+.h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #007bff; /* Пример цвета для цены */
+}
+
+.p {
+    line-height: 1.6;
+}

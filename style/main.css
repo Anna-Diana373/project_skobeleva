@@ -1,0 +1,127 @@
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.review {
+    background-color: rgb(174, 131, 255);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.review__img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    box-shadow: 0 10px 10px rgb(24, 0, 90);
+}
+
+.review__text {
+    flex: 1;
+}
+
+.slider-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden; /* Важно для скрытия элементов за пределами wrapper */
+}
+
+.slider-wrapper {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Плавная анимация */
+}
+
+.slide {
+    flex: 0 0 100%;  /* Каждый слайд занимает 100% ширины */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /*  Чтобы padding не увеличивал ширину слайда */
+}
+
+.teacher {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.teacher img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;  /* Обрезает изображение, чтобы заполнить круг */
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.works img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slider-button-prev {
+    left: 10px;
+}
+
+.slider-button-next {
+    right: 10px;
+}
+
+.review {
+    max-width: 500px;  /* Устанавливаем максимальную ширину */
+    margin: 0 auto;     /* Центрируем блок (если нужно) */
+}
+
+.review {
+    border: 1px solid #ccc; /* Добавляем границу для визуализации */
+    padding: 15px;          /* Добавляем внутренние отступы для содержимого */
+    margin-bottom: 2px;     /* Добавляем отступ снизу для разделения */
+}
+
+.review:last-child {
+    margin-bottom: 0;       /* Убираем отступ у последнего элемента */
+}
+
+.review__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review__text .p {
+    font-size: 14px;
+    line-height: 1.4;
+}
