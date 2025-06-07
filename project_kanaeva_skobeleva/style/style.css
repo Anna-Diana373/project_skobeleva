@@ -1,0 +1,53 @@
+@import 'header.css';
+
+@import 'main.css';
+
+@import 'footer.css';
+
+@import 'base.css';
+
+@import 'fonts.css';
+
+@import 'sections.css';
+
+@import 'images.css';
+
+@import 'buttons.css';
+
+@import 'hype2.css';
+
+@import 'pay.css';
+
+@import 'pre.css';
+
+.images__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.images__item {
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 18px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+    transition: box-shadow .2s;
+}
+.images__item:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+.images__picture {
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 330px;
+    display: block;
+}
+.images__title {
+    text-align: center;
+    font-size: 40px;
+    margin:30px;
+}

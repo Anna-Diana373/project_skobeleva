@@ -1,0 +1,78 @@
+.students__works {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Работы учеников */
+.works {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    position: relative; /* Для позиционирования стрелок */
+}
+
+.work-container {
+    display: flex;
+    overflow: hidden;
+    width: 70%; /*  занимает часть ширины родителя, чтобы видеть стрелки */
+}
+
+.img__exempl {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 10px; /*  отступы между изображениями */
+    transition: transform 0.3s ease; /*  плавный переход */
+    flex-shrink: 0; /*  чтобы изображения не сжимались */
+}
+
+/* Преподаватели */
+.teachers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.teacher-container {
+    display: flex;
+    overflow: hidden;
+    width: 70%; /*  занимает часть ширины родителя, чтобы видеть стрелки */
+}
+
+.img__teacher {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Стрелки */
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2; /*  чтобы стрелки были поверх изображений */
+}
+
+.arrow_left {
+    left: 10px;
+}
+
+.arrow_right {
+    right: 10px;
+}

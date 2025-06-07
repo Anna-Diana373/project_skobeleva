@@ -1,0 +1,37 @@
+.treners__card {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 20px 0;
+  scroll-snap-type: x mandatory; /* для плавного прилипания */
+}
+
+.treners__item {
+  min-width: 360px;
+  flex-shrink: 0;
+  scroll-snap-align: start; /* для плавного прилипания */
+  transition: 0.3s ease;
+}
+
+.treners__img {
+  min-width: 360px;
+}
+
+.treners__link {
+  border: none;
+  margin-top: 20px;
+  color: #d52027;
+  cursor: pointer;
+}
+
+/* Добавим скролл стили (для красоты) */
+.treners__card::-webkit-scrollbar {
+  height: 8px;
+}
+.treners__card::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.treners__card::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "imageUrl": ["images/gallery1_1.jpg", "images/gallery1_2.jpg"],
+    "imageAlt": "Дизайн 1",
+    "imageWidth": 520
+  },
+  {
+    "imageUrl": ["images/gallery2_1.jpg", "images/gallery2_2.jpg"],
+    "imageAlt": "Дизайн 2",
+    "imageWidth": 520
+  },
+  {
+    "imageUrl": ["images/gallery3_1.jpg", "images/gallery3_2.jpg"],
+    "imageAlt": "Дизайн 3",
+    "imageWidth": 520
+  }
+]

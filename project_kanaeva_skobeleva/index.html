@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ноготочки</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/gallery.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/top.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper('.work-examples-slider', {
+                slidesPerView: 1,
+                spaceBetween: 16,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    600: {
+                        slidesPerView: 2,
+                    },
+                    900: {
+                        slidesPerView: 3,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body class="body">
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <header class="header">
+        <div class="header__content">
+            <!-- Центр: заголовок и меню -->
+            <div class="header__center">
+                <h1 class="h1"><a href="#">Nails Studio </a></h1>
+                <nav class="header__nav">
+                    <a href="#works">Работы</a>
+                    <a href="#rew2">Курсы</a>
+                    <a href="#rew">Отзывы</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+</body>
+
+<main class="main">
+    <section id="rew1">
+        <section class="treners">
+            <h2 class="h2">Преподаватели по маникюру
+            </h2>
+            <ul class="treners__card">
+                <li class="treners__item">
+                    <img src="images/t2.jpg" alt="Смирнова Елена" class="treners__img" width="360">
+                    <h3 class="treners__subtitle">Канаева Диана</h3>
+                    <p class="treners__test">Мастер по маникюру</p>
+                    <a href="#rew3">Подробнее</a>
+                </li>
+                <li class="treners__item">
+                    <img src="images/t3.jpg" alt="Иванова Алла" class="treners__img" width="360">
+                    <h3 class="treners__subtitle">Скобелева Анна</h3>
+                    <p class="treners__test">Мастер по маникюру</p>
+                    <a href="#rew3">Подробнее</a>
+                </li>
+                <li class="treners__item">
+                    <img src="images/t1.jpg" alt="Кропотова Юлия" class="treners__img" width="360">
+                    <h3 class="treners__subtitle">Кропотова Юлия</h3>
+                    <p class="treners__test">Мастер по маникюру</p>
+                    <a href="#rew3">Подробнее</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section id="rew2">
+        <h2 class="h2" style="font-size:40px">Курсы</h2>
+        <section class="section_price">
+            <h2 class="price_title section_title">Выберите нужный пакет</h2>
+            <ul class="price_list">
+                <li class="price_item">
+                    <p class="price_level">Базовый курс</p>
+                    <p class="price_price">7500 P</p>
+                    <p class="price_description">Теория маникюра;
+                        <br>Инструменты и материалы;
+                        <br>Техника выполнения маникюра;
+                        <br>Декорирование ногтей;
+                        <br> Практика;
+                        <br>Безопасность и этика.
+                    </p>
+                    <a class="button" href="#" onclick="openModal('Оставить заявку')">Оставить заявку</a>
+                </li>
+                <li class="price_item">
+                    <p class="price_level">Продвинутый курс</p>
+                    <p class="price_price">12 000 P</p>
+                    <p class="price_description">Все, что входит в базовый курс;
+                        <br>Современные тенденции в маникюре;
+                        <br>Углубленное изучение техник маникюра;
+                        <br>Работа с проблемными ногтями;
+                        <br>Технология применения художественного дизайна.
+                        <br>Безопасность и гигиена.
+                        <br>Советы по ведению бизнеса
+                    </p>
+                    <a class="button" href="#" onclick="openModal('Оставить заявку')">Оставить заявку</a>
+                </li>
+                <li class="price_item">
+                    <p class="price_level">Курс повышения квалификации</p>
+                    <p class="price_price">9000 P</p>
+                    <p class="price_description">Обновление знаний;
+                        <br>Совершенствование техник;
+                        <br>Развитие навыков работы с клиентами;
+                        <br>Сложный nail-арт.
+                        <br>Гигиена и безопасность
+                        <br>Работа с различными типами ногтей
+                        <br>Клиентоориентированный подход
+                    </p>
+                    <a class="button" href="#" onclick="openModal('Оставить заявку')">Оставить заявку</a>
+                </li>
+            </ul>
+        </section>
+        <div class="modal-overlay" id="formModal" style="display:none;">
+            <div class="modal">
+                <button class="close-btn" onclick="closeModal()">×</button>
+                <h3>Запишитесь на курс<br><span style="font-weight: normal;" id="courseTitle">со скидкой 10%</span>
+                </h3>
+                <p style="font-size: 14px; color: #eee;">Акция действительна до 10 марта 2025 года</p>
+                <form id="signupForm">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="tel" name="phone" placeholder="Телефон" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="hidden" name="course" id="selectedCourse">
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="rew">
+        <h2 class="h2" style="margin-top:20px; font-size:40px;">Отзывы</h2>
+        <div class="reviews__container">
+            <div class="review">
+                <img class="review__img" src="images/rewiew.png" alt="Фото пользователя">
+                <div class="review__text">
+                    <p class="p">
+                        Очень довольна курсом! Преподаватели профессионалы, материал подаётся доступно и
+                        понятно. Спасибо за полезные советы и практические навыки! Юля
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="images/rewiew2.jpg" alt="Фото пользователя">
+                <div class="review__text">
+                    <p class="p">
+                        "Курс превзошёл мои ожидания! Научилась не только базовым техникам, но и современным
+                        трендам в маникюре. Результат виден сразу, рекомендую всем! Оксана
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="images/rewiew3.jpg" alt="Фото пользователя">
+                <div class="review__text">
+                    <p class="p">
+                        Отличный курс для новичков и тех, кто хочет повысить уровень. Занятия интересные, все
+                        подробно объясняют, много практики. Спасибо организаторам! Айгуль
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="images/rewiew4.jpg" alt="Фото пользователя">
+                <div class="review__text">
+                    <p class="p">
+                        Очень удобно, что можно учиться в своём темпе. Качество видеоуроков и материалов на
+                        высоте.
+                        Теперь могу уверенно делать маникюр себе и клиентам. Жозефина
+                    </p>
+                </div>
+            </div>
+            <div class="review">
+                <img class="review__img" src="images/rewiew5.jpg" alt="Фото пользователя">
+                <div class="review__text">
+                    <p class="p">
+                        Спасибо за профессиональный подход! Лекции насыщенные и легко усваиваются. После курса
+                        чувствую себя настоящим мастером маникюра. Всем рекомендую! Магдалина
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2 class="h2" style="margin-top:20px; font-size: 40px;">Наши работы</h2>
+        <div class="swiper work-examples-slider" id="works">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/example__1.jpg" alt="Пример работы 1"></div>
+                <div class="swiper-slide"><img src="images/example__2.jpg" alt="Пример работы 2"></div>
+                <div class="swiper-slide"><img src="images/example__3.jpg" alt="Пример работы 3"></div>
+                <div class="swiper-slide"><img src="images/p1.jpg" alt="Пример работы 4"></div>
+                <div class="swiper-slide"><img src="images/p2.jpg" alt="Пример работы 5"></div>
+                <div class="swiper-slide"><img src="images/p3.jpg" alt="Пример работы 6"></div>
+                <div class="swiper-slide"><img src="images/p4.jpg" alt="Пример работы 7"></div>
+                <div class="swiper-slide"><img src="images/p5.jpg" alt="Пример работы 8"></div>
+                <div class="swiper-slide"><img src="images/p6.jpg" alt="Пример работы 9"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <section class="images">
+        <h2 class="images__title">Рабочие места</h2>
+        <ul class="images__list"></ul>
+    </section>
+</main>
+<footer class="footer">
+    <section id="rew3">
+        <h1>Контакты<br></h1>
+        <h3 style="margin: 0.67em 0;">Если у Вас возникли вопросы, мы будем рады помочь.</h3>
+        <section class="contacts">
+            <h3 style="margin:10px;">Наши Преподаватели:</h3>
+            <p class="p">Канаева Диана : +79177117027<br>
+                Скобелева Анна: +79149428456<br>
+                Кропотова Юлия: +79993213284<br>
+            </p>
+        </section>
+        <section class="network">
+            <p class="p"><h3>Обратная связь</h3><br>
+                8 (999)413-09-09<br>
+                ПН-ПТ: 10:00-18:00<br><br>
+
+                <h3>Написать нам в социальных сетях</h3><br>
+                ВКонтакте: nailstudio<br>
+                Telegram: @nailstudio<br>
+                Mail: nailstudio@gmail.com<br>
+            </p>
+        </section>
+
+</footer>
+</body>
+<script>
+    function openModal(courseName) {
+        document.getElementById("formModal").style.display = "flex";
+        document.getElementById("courseTitle").textContent = courseName + " — скидка 10%";
+        document.getElementById("selectedCourse").value = courseName;
+    }
+
+    function closeModal() {
+        document.getElementById("formModal").style.display = "none";
+    }
+
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Заявка на \"" + document.getElementById("selectedCourse").value + "\" отправлена!");
+        closeModal();
+    });
+</script>
+
+</html>
