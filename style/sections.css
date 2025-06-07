@@ -59,3 +59,8 @@
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(186, 145, 240, 0.699);;
 }
+.treners__card {
+    list-style: none; /* убирает точки */
+    padding: 0; /* убирает отступы по умолчанию */
+    margin: 0; /* опционально */
+}
