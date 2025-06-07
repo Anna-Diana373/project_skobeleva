@@ -4,7 +4,7 @@
 }
 
 .review {
-    background-color: rgb(174, 131, 255);
+    background-color: rgb(221 205 251);
     border-radius: 10px;
     display: flex;
     align-items: flex-start;
@@ -124,4 +124,63 @@
 .review__text .p {
     font-size: 14px;
     line-height: 1.4;
+}
+.header {
+  position: relative;
+  padding: 10px 20px;
+  background-color: #ceb4ff; /* или твой фон */
+  margin-top: 20px;
+}
+
+.header__content {
+  max-width: 1200 px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header__center {
+  text-align: center;
+}
+
+.header__center .h1 {
+  margin: 0;
+  font-size: 24px; /* подгони под себя */
+}
+
+.header__nav {
+  display: inline-flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Логотип справа */
+.header__logo {
+  position: absolute;
+  top: 50%;
+  right: 20px; /* прижимает к правому краю */
+  transform: translateY(-50%);
+}
+.work-examples-slider {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+.work-examples-slider img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+@media (max-width: 600px) {
+  .work-examples-slider img {
+    height: 150px;
+  }
 }

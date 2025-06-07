@@ -1,67 +1,54 @@
-body {
-    font-family: 'Montserrat', Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f0f0f0;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.modal-overlay {
+  display: none; /* скрыто по умолчанию */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center; /* по горизонтали */
+  align-items: center;     /* по вертикали */
+  z-index: 9999;
+
+  /* Для корректного центрирования при показе */
+  display: flex;
 }
 
-.h1 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #555;
+.modal {
+  background-color: #b591f4;
+  padding: 30px;
+  border-radius: 8px;
+  width: 350px;
+  color: white;
+  position: relative; /* без absolute, чтобы центр работал */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  text-align: left;
 }
 
-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-     width: 80%;
-    max-width: 400px;
-     box-sizing: border-box;
-
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
 }
 
-input[type="text"]{
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    color: #333;
-    background-color: #fff; 
-    box-sizing: border-box;
-
+.modal button[type="submit"] {
+  width: 100%;
+  background-color: #0c0c20;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-input[type="text"]:focus {
-    outline: none; 
-    border-color: #aaa; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
-}
-
-input[type="submit"] {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: #3b3b3b;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-input[type="submit"]:hover {
-    background-color: #3b3b3b; 
-}
-
-@media (max-width: 600px) {
-    form {
-      width: 95%; 
-    }
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
 }

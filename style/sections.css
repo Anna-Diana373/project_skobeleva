@@ -26,7 +26,7 @@
 }
 
 .contacts {
-    background-color: rgba(155, 249, 197, 0.76);
+    background-color: rgb(191 246 215 / 76%);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -34,7 +34,7 @@
 }
 
 .network {
-    background-color: rgba(155, 249, 197, 0.76);
+    background-color: rgb(191 246 215 / 76%);
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
